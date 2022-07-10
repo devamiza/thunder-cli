@@ -5,7 +5,7 @@
     "node": true,
     "jest": true
   },
-  "ignorePatterns": ["dist/**/*",".eslintrc.js"],
+  "ignorePatterns": ["dist/**/*", "jest.config.js", ".eslintrc.js"],
   "extends": ["airbnb-base", "airbnb-typescript/base", "prettier"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {

@@ -41,7 +41,7 @@
       }
     },
     "lint-staged": {
-      "*.{ts,tsx}": ["yarn lint:fix"]
+      "*.{js,ts,tsx}": ["yarn lint:fix"]
     },
     "scripts": {
       "start": "node dist/index.js",
@@ -51,7 +51,7 @@
       "build": "tsc",
       "typecheck": "tsc --noEmit",
       "test": "jest",
-      "lint": "eslint src/ --ext .js,.ts",
+      "lint": "eslint src/ --ext .js,.ts,tsx",
       "lint:fix": "eslint --fix .",
       "clean": "rm -rf dist",
       "prepare": "husky install"
