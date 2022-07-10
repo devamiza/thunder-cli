@@ -15,8 +15,8 @@
     }
   },
   "lint-staged": {
-    "*.{js,json,css,scss,md,ts,html,graphql}": [
-      "yarn format --uncommitted"
+    "*.{ts,tsx}": [
+      "yarn lint:fix"
     ]
   },
   "scripts": {

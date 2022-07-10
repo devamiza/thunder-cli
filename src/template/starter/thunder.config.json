@@ -7,7 +7,7 @@
       "node": true,
       "jest": true
     },
-    "ignorePatterns": [".eslintrc.js"],
+    "ignorePatterns": ["dist/**/*",".eslintrc.js"],
     "extends": ["prettier"],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -41,7 +41,7 @@
       }
     },
     "lint-staged": {
-      "*.{js,json,css,scss,md,ts,html,graphql}": ["yarn format --uncommitted"]
+      "*.{ts,tsx}": ["yarn lint:fix"]
     },
     "scripts": {
       "start": "node dist/index.js",

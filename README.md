@@ -1,4 +1,4 @@
-Generate typescript templates, start fast and enjoy your saved time.
+⚡️ Generate typescript templates, start fast and enjoy your saved time.
 
 ## Installation
 
