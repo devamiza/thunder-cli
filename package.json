@@ -5,7 +5,7 @@
     "email": "admin@devamiza.com",
     "url": "https://github.com/devamiza"
   },
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "type": "module",
