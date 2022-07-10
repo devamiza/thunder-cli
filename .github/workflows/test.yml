@@ -1,0 +1,29 @@
+
+name: "🧪 test"
+
+on:
+    push:
+        branches:
+            - master
+    pull_request:
+
+jobs:
+    test:
+        name: "🧪 test"
+        runs-on: ubuntu-latest
+        steps:
+            - name: "📚 checkout"
+              uses: actions/checkout@v3
+            - name: "🟢 node"
+              uses: actions/setup-node@v3
+              with:
+                  node-version: 16.15.1
+                  registry-url: https://registry.npmjs.org/
+            - name: "📦 install"
+              run: npm ci
+            - name: "🧪 test"
+              run: npm run test
+            - name: "☂️ coverage"
+              uses: codecov/codecov-action@v3
+              #with:
+                #token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos

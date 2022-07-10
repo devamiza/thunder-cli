@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "ESNext",
+    "lib": ["ESNext", "ES6", "DOM"],
+    "moduleResolution": "Node",
+
+    /* Modules */
+    "module": "ESNext",
+
+    /* Emit */
+    "declaration": true,
+    "inlineSourceMap": true,
+    "outDir": "./dist",
+    "removeComments": true,
+    "rootDir": ".",
+
+    /* Interop Constraints */
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Type Checking */
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+
+    /* Completeness */
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*.ts", "src/template/starter/thunder.config.ts"],
+  "exclude": ["node_modules", "src/template/**/*"]
+}
