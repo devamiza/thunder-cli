@@ -1,8 +1,8 @@
 import inquirer from 'inquirer';
-import { ConfigAnswer } from '../interfaces';
-import FileManager from './file.manager';
-import Utility from './utility';
-import AnswerValidator from './validator';
+import { ConfigAnswer } from '../interfaces/index.js';
+import FileManager from './file.manager.js';
+import Utility from './utility.js';
+import AnswerValidator from './validator.js';
 
 export default class CommanderQuestions {
   public static linter(): inquirer.QuestionCollection<ConfigAnswer> {

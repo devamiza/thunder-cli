@@ -1,6 +1,6 @@
-import { ConfigAnswer } from '../interfaces';
-import Commander from './commander';
-import CommanderQuestions from './questions';
+import { ConfigAnswer } from '../interfaces/index.js';
+import Commander from './commander.js';
+import CommanderQuestions from './questions.js';
 
 export default class GroupQuestions {
   public static async start() {

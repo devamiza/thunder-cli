@@ -7,24 +7,21 @@
   },
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "type": "module",
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,ts,tsx}": [
-      "yarn lint:fix"
-    ]
+  "main": "dist/src/index.js",
+  "types":"dist/src/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "bin": {
+    "thunder": "dist/index.js"
   },
   "scripts": {
     "start": "node dist/index.js",
     "dev": "tsx src/index.ts",
     "watch": "tsx watch src/index.ts",
     "debug": "node --inspect --loader tsx ./src/index.ts",
-    "build": "tsc",
+    "build": "tsc --inlineSourceMap false",
     "typecheck": "tsc --noEmit",
     "test": "jest",
     "lint": "eslint src/ --ext .js,.ts",
@@ -39,12 +36,6 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/devamiza/thunder-cli/issues"
-  },
-  "files": [
-    "dist"
-  ],
-  "bin": {
-    "thunder": "dist/index.js"
   },
   "homepage": "https://github.com/devamiza/thunder-cli#readme",
   "devDependencies": {
@@ -72,5 +63,15 @@
     "inquirer": "8.2.3",
     "nanospinner": "^1.1.0",
     "prettier": "^2.7.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "yarn lint:fix"
+    ]
   }
 }

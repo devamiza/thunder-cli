@@ -1,5 +1,5 @@
-import Core from '../core';
-import PackageManager from './package.manager';
+import Core from '../core/index.js';
+import PackageManager from './package.manager.js';
 
 export default class LinterHandler extends Core {
   public static run() {

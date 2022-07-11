@@ -1,9 +1,9 @@
 import figlet from 'figlet';
 import { inspect, InspectOptions } from 'util';
-import prettier from 'prettier/standalone';
-import typescriptParser from 'prettier/parser-typescript';
-import babelParser from 'prettier/parser-babel';
-import { PartialRecord } from '../interfaces';
+import prettier from 'prettier/standalone.js';
+import typescriptParser from 'prettier/parser-typescript.js';
+import babelParser from 'prettier/parser-babel.js';
+import { PartialRecord } from '../interfaces/index.js';
 
 export default class Utility {
   public static capitalize(s: string) {

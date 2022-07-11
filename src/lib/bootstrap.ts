@@ -1,12 +1,12 @@
 import { readFileSync, writeFileSync } from 'fs';
-import Core from './core';
-import { ConfigAnswer, DirFilesReturn, HandlerInput } from '../interfaces';
-import TemplateRender from './template.render';
-import Utility from './utility';
-import PackageManager from './handlers/package.manager';
-import GitHandler from './handlers/git';
-import LinterHandler from './handlers/linter';
-import GroupQuestions from './group.questions';
+import Core from './core/index.js';
+import { ConfigAnswer, DirFilesReturn, HandlerInput } from '../interfaces/index.js';
+import TemplateRender from './template.render.js';
+import Utility from './utility.js';
+import PackageManager from './handlers/package.manager.js';
+import GitHandler from './handlers/git.js';
+import LinterHandler from './handlers/linter.js';
+import GroupQuestions from './group.questions.js';
 
 export default class Bootstrap extends Core {
   public static async pre() {

@@ -1,4 +1,4 @@
-import FileManager from '../lib/file.manager';
+import FileManager from '../lib/file.manager.js';
 
 export type DirFilesReturn = ReturnType<typeof FileManager['getDirFiles']>;
 

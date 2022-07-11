@@ -1,6 +1,6 @@
 import { execSync } from 'child_process';
-import Core from '../core';
-import Spinner from '../spinner';
+import Core from '../core/index.js';
+import Spinner from '../spinner.js';
 
 export default class GitHandler extends Core {
   public static async run(): Promise<void> {

@@ -16,6 +16,7 @@
   "plugins": ["@typescript-eslint", "prettier"],
   "rules": {
     "prettier/prettier": ["error", { "semi": true }],
+    "import/extensions": ["error", "ignorePackages"],
     "no-restricted-syntax": 0,
     "no-continue": 0,
     "@typescript-eslint/no-empty-function": ["error", { "allow": ["private-constructors", "protected-constructors"] }],

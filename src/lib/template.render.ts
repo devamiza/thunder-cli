@@ -1,5 +1,5 @@
-import { HandlerInput, PartialRecord } from '../interfaces';
-import Utility from './utility';
+import { HandlerInput, PartialRecord } from '../interfaces/index.js';
+import Utility from './utility.js';
 
 type TemplateKeys = keyof HandlerInput;
 export default class TemplateRender {

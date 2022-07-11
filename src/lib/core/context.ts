@@ -1,7 +1,7 @@
 import { readFileSync } from 'fs';
 import { join, resolve } from 'path';
-import { ConfigAnswer, Template, Context as IContext } from '../../interfaces';
-import Utility from '../utility';
+import { ConfigAnswer, Template, Context as IContext } from '../../interfaces/index.js';
+import Utility from '../utility.js';
 
 export default class Context {
   private static instance: Context | undefined;

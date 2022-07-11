@@ -1,5 +1,5 @@
-import FileManager from '../file.manager';
-import Context from './context';
+import FileManager from '../file.manager.js';
+import Context from './context.js';
 
 export default class Core {
   public static fileManager = FileManager;

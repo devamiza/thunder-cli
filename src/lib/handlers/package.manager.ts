@@ -1,7 +1,7 @@
 import { execSync } from 'child_process';
-import { PackageJsonDependencyTypes } from '../../interfaces';
-import Core from '../core';
-import Spinner from '../spinner';
+import { PackageJsonDependencyTypes } from '../../interfaces/index.js';
+import Core from '../core/index.js';
+import Spinner from '../spinner.js';
 
 export default class PackageManager extends Core {
   public static install() {

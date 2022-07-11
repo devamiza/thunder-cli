@@ -1,6 +1,6 @@
-import { ConfigAnswer } from './answers';
-import { File } from './file.manager';
-import { ThunderConfig } from './thunder.config';
+import { ConfigAnswer } from './answers.js';
+import { File } from './file.manager.js';
+import { ThunderConfig } from './thunder.config.js';
 
 export interface Context {
   destination: string;

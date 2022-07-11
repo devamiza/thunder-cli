@@ -26,6 +26,8 @@ jobs:
               run: npm run test
             #- name: "☂️ coverage"
              # uses: codecov/codecov-action@v3
+            - name: "👷 Build"
+              run: npm run build
             - name: "🚀 publish"
               run: npm publish --access public
               env:

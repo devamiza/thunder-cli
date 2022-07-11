@@ -1,5 +1,5 @@
-import { IPackageManager } from './package.manager';
-import { Template } from './template';
+import { IPackageManager } from './package.manager.js';
+import { Template } from './template.js';
 
 export interface ConfigAnswer {
   projectName: string;

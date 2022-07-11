@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
     /* Language and Environment */
-    "target": "ESNext",
+    "target": "ES2021",
     "lib": ["ESNext", "ES6", "DOM"],
-    "moduleResolution": "Node",
 
     /* Modules */
-    "module": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
 
     /* Emit */
     "declaration": true,

@@ -1,6 +1,6 @@
 import { existsSync, readdirSync, cpSync, writeFileSync } from 'fs';
 import { join, resolve } from 'path';
-import { File } from '../interfaces';
+import { File } from '../interfaces/file.manager.js';
 
 export default class FileManager {
   private static ignoredFiles = ['.DS_Store', 'thunder.config.ts'];
