@@ -131,3 +131,6 @@ dist
 
 # Ignore code-workspaces
 *.code-workspace
+
+# macOS
+.DS_Store
