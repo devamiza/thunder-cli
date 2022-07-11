@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import Bootstrap from './lib/bootstrap.js';
 
 const { answers } = await Bootstrap.pre();
