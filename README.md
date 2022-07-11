@@ -4,10 +4,18 @@
 
 ```
 # using yarn
-yarn add @devamiza/thunder-cli
+yarn global add @devamiza/thunder-cli
 
 # using npm
-npm i @devamiza/thunder-cli
+npm i -g @devamiza/thunder-cli
+```
+
+## Usage
+
+just run this command in terminal:
+
+```
+thunder
 ```
 
 ## Features
@@ -22,4 +30,4 @@ npm i @devamiza/thunder-cli
 - Prettier
 - VScode debugger configs ready for both debug and attach
 - Tests with jest
-- Github actions (Automatic NPM publish, Test, Style)
+- Github actions (automatic NPM publish, test, style)
