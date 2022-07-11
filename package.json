@@ -5,11 +5,11 @@
     "email": "admin@devamiza.com",
     "url": "https://github.com/devamiza"
   },
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "type": "module",
   "main": "dist/src/index.js",
-  "types":"dist/src/index.d.ts",
+  "types": "dist/src/index.d.ts",
   "files": [
     "dist"
   ],
@@ -28,7 +28,7 @@
     "lint:fix": "eslint --fix .",
     "clean": "rm -rf dist",
     "prepublish": "npm run build"
-    },
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/devamiza/thunder-cli.git"
