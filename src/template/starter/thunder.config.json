@@ -7,7 +7,7 @@
       "node": true,
       "jest": true
     },
-    "ignorePatterns": ["dist/**/*",".eslintrc.js"],
+    "ignorePatterns": ["dist/**/*", ".eslintrc.js"],
     "extends": ["prettier"],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -18,6 +18,7 @@
     "plugins": ["@typescript-eslint", "prettier"],
     "rules": {
       "prettier/prettier": ["error", { "semi": true }],
+      "import/extensions": ["error", "ignorePackages"],
       "no-restricted-syntax": 0,
       "no-continue": 0,
       "@typescript-eslint/no-empty-function": [
@@ -31,24 +32,21 @@
   },
   "packageJson": {
     "name": "thunder-starter",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "type": "module",
+    "main": "dist/src/index.js",
+    "types": "dist/src/index.d.ts",
+    "files": ["dist"],
+    "bin": {
+      "thunder": "dist/index.js"
+    },
     "description": "",
-    "main": "index.js",
-    "husky": {
-      "hooks": {
-        "pre-commit": "lint-staged"
-      }
-    },
-    "lint-staged": {
-      "*.{js,ts,tsx}": ["yarn lint:fix"]
-    },
     "scripts": {
       "start": "node dist/index.js",
       "dev": "tsx src/index.ts",
       "watch": "tsx watch src/index.ts",
       "debug": "node --inspect --loader tsx ./src/index.ts",
-      "build": "tsc",
+      "build": "tsc --inlineSourceMap false",
       "typecheck": "tsc --noEmit",
       "test": "jest",
       "lint": "eslint src/ --ext .js,.ts,tsx",
@@ -57,7 +55,6 @@
       "prepare": "husky install"
     },
     "license": "MIT",
-    "files": ["dist"],
     "dependencies": {},
     "devDependencies": {
       "@types/jest": "^28.1.3",
@@ -74,6 +71,14 @@
       "ts-jest": "^28.0.5",
       "tsx": "^3.7.1",
       "typescript": "^4.7.4"
+    },
+    "husky": {
+      "hooks": {
+        "pre-commit": "lint-staged"
+      }
+    },
+    "lint-staged": {
+      "*.{js,ts,tsx}": ["yarn lint:fix"]
     }
   }
 }
