@@ -8,14 +8,14 @@
   "version": "1.0.8",
   "description": "",
   "type": "module",
-  "main": "dist/src/index.js",
-  "types": "dist/src/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist",
     "template"
   ],
   "bin": {
-    "thunder": "dist/src/index.js"
+    "thunder": "dist/index.js"
   },
   "scripts": {
     "start": "node dist/index.js",
