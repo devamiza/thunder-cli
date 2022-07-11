@@ -11,9 +11,9 @@
     /* Emit */
     "declaration": true,
     "inlineSourceMap": true,
-    "outDir": "./dist",
+    "outDir": "dist",
     "removeComments": true,
-    "rootDir": ".",
+    "rootDir": "src",
 
     /* Interop Constraints */
     "esModuleInterop": true,
