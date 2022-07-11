@@ -5,7 +5,7 @@
     "email": "admin@devamiza.com",
     "url": "https://github.com/devamiza"
   },
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "",
   "type": "module",
   "main": "dist/src/index.js",
@@ -13,7 +13,7 @@
   "files": [
     "dist",
     "template"
-    ],
+  ],
   "bin": {
     "thunder": "dist/src/index.js"
   },
