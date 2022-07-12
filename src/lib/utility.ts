@@ -52,6 +52,10 @@ export default class Utility {
     });
 
   public static dirname(meta: any) {
-    return new URL('', meta.url).pathname.split('/').slice(0, -1).join('/');
+    return new URL('', meta.url).pathname
+      .split('/')
+      .filter((i) => i !== '')
+      .slice(0, -1)
+      .join('/');
   }
 }

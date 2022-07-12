@@ -50,7 +50,7 @@ export default class Context {
   }
 
   private getTemplatePath(template: Template) {
-    let basePath = resolve(Utility.dirname(import.meta), '../../../template');
+    let basePath = join(Utility.dirname(import.meta), '../../../template');
     switch (template) {
       case 'Starter':
         basePath = join(basePath, 'starter');
