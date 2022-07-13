@@ -19,6 +19,7 @@
     "import/extensions": ["error", "ignorePackages"],
     "no-restricted-syntax": 0,
     "no-continue": 0,
+    "no-console": "off",
     "@typescript-eslint/no-empty-function": ["error", { "allow": ["private-constructors", "protected-constructors"] }],
     "@typescript-eslint/no-cycle": 0,
     "import/no-cycle": 0,
